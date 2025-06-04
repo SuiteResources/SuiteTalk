@@ -36,7 +36,7 @@ class PhpVariable extends PhpElement
         $this->comment        = $comment;
         $this->access         = $access;
         $this->identifier     = $identifier;
-        $this->initialization = '';
+        $this->initialization = null;
         if (strlen($initialization)) {
             $this->initialization = ' = '.$initialization;
         }
